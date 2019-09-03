@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/offerListFragment"
+            android:id="@+id/main">
+    <fragment
+            android:id="@+id/offerListFragment"
+            android:name="com.priamm.n1test.ui.offers.OfferListFragment"
+            android:label="OfferListFragment">
+        <action
+                android:id="@+id/showOffer"
+                app:destination="@id/offerFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/offerFragment"
+            android:name="com.priamm.n1test.ui.offer.OfferFragment"
+            android:label="OfferFragment">
+        <argument
+                android:name="offer"
+                app:argType="com.priamm.n1test.model.Offer"/>
+    </fragment>
+</navigation>
