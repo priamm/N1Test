@@ -8,11 +8,11 @@ import com.priamm.n1test.data.network.OffersAPI
 import com.priamm.n1test.model.Offer
 import com.priamm.n1test.model.ResponseOffers
 import com.priamm.n1test.extensions.add
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.disposables.CompositeDisposable
+import io.reactivex.rxjava3.schedulers.Schedulers
 
-import io.reactivex.Single
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 class OfferRepository @Inject constructor(private val offersAPI: OffersAPI) : PositionalDataSource<Offer>() {

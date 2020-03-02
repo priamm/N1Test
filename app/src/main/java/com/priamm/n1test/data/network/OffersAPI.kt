@@ -2,7 +2,8 @@ package com.priamm.n1test.data.network
 
 import com.priamm.n1test.utility.Constants
 import com.priamm.n1test.model.ResponseOffers
-import io.reactivex.Single
+import io.reactivex.rxjava3.core.Single
+
 import retrofit2.http.GET
 import retrofit2.http.Query
 

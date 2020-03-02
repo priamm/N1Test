@@ -8,8 +8,8 @@ import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
 import com.priamm.n1test.model.Offer
 import com.priamm.n1test.repository.OfferRepositoryFactory
+import io.reactivex.rxjava3.disposables.CompositeDisposable
 
-import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 class OfferListViewModel @Inject constructor(private val offersRepositoryFactory: OfferRepositoryFactory) :
